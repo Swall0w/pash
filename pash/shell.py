@@ -28,6 +28,7 @@ def _execute(cmd):
     is the process id of its child process.
     '''
     pid = os.fork()
+    print(pid)
     if pid == 0:
     # Child process
         # Replace the child shell process with the program called with exec
